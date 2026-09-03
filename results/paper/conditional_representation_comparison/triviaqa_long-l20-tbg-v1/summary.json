@@ -1,0 +1,16 @@
+{
+  "bootstrap_replicates": 1000,
+  "bootstrap_unit": "source_id",
+  "probes": {
+    "plus_dense": {
+      "path": "results/paper/probes/triviaqa-long-token-entropy-plus-dense-l20-tbg-v1",
+      "representation": "token_entropy_plus_dense_l20_tbg"
+    },
+    "plus_sae": {
+      "path": "results/paper/probes/triviaqa-long-token-entropy-plus-sae-l20-tbg-v1",
+      "representation": "token_entropy_plus_sae_l20_tbg"
+    }
+  },
+  "reference": "plus_dense",
+  "run_alias": "triviaqa_long"
+}

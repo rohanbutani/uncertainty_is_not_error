@@ -1,0 +1,20 @@
+{
+  "bootstrap_replicates": 1000,
+  "bootstrap_unit": "source_id",
+  "probes": {
+    "plus_dense": {
+      "path": "results/paper/probes/triviaqa-brief-token-entropy-plus-dense-l20-tbg-v1",
+      "representation": "token_entropy_plus_dense_l20_tbg"
+    },
+    "plus_sae": {
+      "path": "results/paper/probes/triviaqa-brief-token-entropy-plus-sae-l20-tbg-v1",
+      "representation": "token_entropy_plus_sae_l20_tbg"
+    },
+    "token_entropy": {
+      "path": "results/paper/probes/triviaqa-brief-token-entropy-v1",
+      "representation": "token_entropy_scalar"
+    }
+  },
+  "reference": "token_entropy",
+  "run_alias": "triviaqa_brief"
+}

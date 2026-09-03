@@ -1,0 +1,41 @@
+{
+  "important_limit": "cross-prediction and overlap establish dissociation only if direct probes are predictive and results replicate across runs/seeds/sites; they do not by themselves establish interpretability or causality",
+  "inputs": [
+    {
+      "path": "results/paper/probes/triviaqa-brief-sae-l20-tbg-v1/study_a.json",
+      "sha256": "c7cdaab3ac35dffa0c22bf226695d1262acdf154473197ef9d5c8bbc4e53120f"
+    },
+    {
+      "path": "results/paper/probes/triviaqa-brief-sae-l20-tbg-v1/test_metrics.json",
+      "sha256": "0598c837564e06898d33817f57c59739d5dd505b6870c016aff76e9ccbae1c30"
+    },
+    {
+      "path": "results/paper/probes/triviaqa-brief-sae-l20-tbg-v1/test_bootstrap.json",
+      "sha256": "cffef9617f9cc7cd715c8ec3ca4cbbd1d5773e7def9d30a9df239257d75bdb15"
+    },
+    {
+      "path": "results/paper/probes/triviaqa-brief-sae-l20-tbg-v1/manifest.json",
+      "sha256": "20528631ccab2fecec5cd93ba4845ada3b6134cb95bee25e97e448fc04da611a"
+    },
+    {
+      "path": "results/paper/probes/popqa-brief-sae-l20-tbg-v1/study_a.json",
+      "sha256": "f5d628728776307f3c97df9b90ce35b4dbcd06e37c7667d2735318a4e82d4958"
+    },
+    {
+      "path": "results/paper/probes/popqa-brief-sae-l20-tbg-v1/test_metrics.json",
+      "sha256": "33a4b095dfd151f21b180ecf86ec7dddb1fe3298e526ac1ca14b424e6134697e"
+    },
+    {
+      "path": "results/paper/probes/popqa-brief-sae-l20-tbg-v1/test_bootstrap.json",
+      "sha256": "e88159559f942777dad49f5afa6fdec56e115bc871ef8517f93248aa6740e272"
+    },
+    {
+      "path": "results/paper/probes/popqa-brief-sae-l20-tbg-v1/manifest.json",
+      "sha256": "7f87ddc7ad61f1a88b7fbdbc1514c9178e6146ce3da71fbb24380152bf8525bf"
+    }
+  ],
+  "n_bundles": 2,
+  "schema_version": 1,
+  "status": "aggregate_of_frozen_probe_bundles",
+  "study": "A"
+}

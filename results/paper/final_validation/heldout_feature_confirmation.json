@@ -1,0 +1,77 @@
+[
+  {
+    "dataset": "trivia_qa",
+    "correctness_target": "f1_50",
+    "seed": 2026,
+    "site": "L24/slt",
+    "n_discovery": 3689,
+    "n_confirmation": 3693,
+    "n_discovered_candidates": 6,
+    "n_confirmed_conditional_correctness": 4,
+    "discovered_feature_ids": [
+      4043,
+      4155,
+      6567,
+      9786,
+      12522,
+      15667
+    ],
+    "confirmed_feature_ids": [
+      4043,
+      4155,
+      6567,
+      15667
+    ],
+    "scope_note": "Replicates correctness association within both SE strata; does not prove equivalence to zero for SE effects."
+  },
+  {
+    "dataset": "popqa",
+    "correctness_target": "judge_binary",
+    "seed": 2026,
+    "site": "L24/slt",
+    "n_discovery": 6522,
+    "n_confirmation": 6525,
+    "n_discovered_candidates": 19,
+    "n_confirmed_conditional_correctness": 16,
+    "discovered_feature_ids": [
+      412,
+      2077,
+      3227,
+      3392,
+      3573,
+      4570,
+      5225,
+      5725,
+      6906,
+      7742,
+      9283,
+      10782,
+      10907,
+      12051,
+      12554,
+      12890,
+      16161,
+      16219,
+      16298
+    ],
+    "confirmed_feature_ids": [
+      412,
+      2077,
+      3392,
+      3573,
+      4570,
+      5225,
+      5725,
+      9283,
+      10782,
+      10907,
+      12051,
+      12554,
+      12890,
+      16161,
+      16219,
+      16298
+    ],
+    "scope_note": "Replicates correctness association within both SE strata; does not prove equivalence to zero for SE effects."
+  }
+]

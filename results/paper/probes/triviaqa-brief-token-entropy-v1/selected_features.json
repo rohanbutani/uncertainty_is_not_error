@@ -1,0 +1,40 @@
+{
+  "correctness": {
+    "feature_ids": [
+      0
+    ],
+    "target": "f1_50",
+    "winner": {
+      "fold_scores": [
+        0.8945531394036759,
+        0.8913615795968737,
+        0.8843520437504746,
+        0.8842967005705781,
+        0.8885886510081065
+      ],
+      "k": 1,
+      "mean_score": 0.8886304228659416,
+      "regularization": 0.0001,
+      "selector": "identity"
+    }
+  },
+  "representation": "token_entropy_scalar",
+  "se": {
+    "feature_ids": [
+      0
+    ],
+    "winner": {
+      "fold_scores": [
+        0.7316264259527263,
+        0.716902594803809,
+        0.7121264588624672,
+        0.7070863826772836,
+        0.7014297306904792
+      ],
+      "k": 1,
+      "mean_score": 0.713834318597353,
+      "regularization": 1.0,
+      "selector": "identity"
+    }
+  }
+}

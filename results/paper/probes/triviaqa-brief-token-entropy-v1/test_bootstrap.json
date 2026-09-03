@@ -1,0 +1,106 @@
+{
+  "correctness_cross_minus_direct_auroc": {
+    "ci_high": 0.0,
+    "ci_low": 0.0,
+    "point": 0.0,
+    "valid_replicates": 1000
+  },
+  "correctness_direct": {
+    "auprc": {
+      "ci_high": 0.9639526298079425,
+      "ci_low": 0.939112739287511,
+      "point": 0.9517936461209364,
+      "valid_replicates": 1000
+    },
+    "auroc": {
+      "ci_high": 0.9001701559915452,
+      "ci_low": 0.8668627474469323,
+      "point": 0.8841387769732264,
+      "valid_replicates": 1000
+    },
+    "brier": {
+      "ci_high": 0.2274412134379559,
+      "ci_low": 0.2257343372050518,
+      "point": 0.2266100992671153,
+      "valid_replicates": 1000
+    },
+    "log_loss": {
+      "ci_high": 0.64794132399742,
+      "ci_low": 0.6445192210341314,
+      "point": 0.6462750463117198,
+      "valid_replicates": 1000
+    }
+  },
+  "correctness_from_se_features": {
+    "auprc": {
+      "ci_high": 0.9639526298079425,
+      "ci_low": 0.939112739287511,
+      "point": 0.9517936461209364,
+      "valid_replicates": 1000
+    },
+    "auroc": {
+      "ci_high": 0.9001701559915452,
+      "ci_low": 0.8668627474469323,
+      "point": 0.8841387769732264,
+      "valid_replicates": 1000
+    },
+    "brier": {
+      "ci_high": 0.2274412134379559,
+      "ci_low": 0.2257343372050518,
+      "point": 0.2266100992671153,
+      "valid_replicates": 1000
+    },
+    "log_loss": {
+      "ci_high": 0.64794132399742,
+      "ci_low": 0.6445192210341314,
+      "point": 0.6462750463117198,
+      "valid_replicates": 1000
+    }
+  },
+  "se_cross_minus_direct_r2": {
+    "ci_high": 0.0,
+    "ci_low": 0.0,
+    "point": 0.0,
+    "valid_replicates": 1000
+  },
+  "se_direct": {
+    "mae": {
+      "ci_high": 0.3084274623303169,
+      "ci_low": 0.2876287250939332,
+      "point": 0.29768909124145093,
+      "valid_replicates": 1000
+    },
+    "r2": {
+      "ci_high": 0.7444103759923081,
+      "ci_low": 0.6969089901076904,
+      "point": 0.7210210290932619,
+      "valid_replicates": 1000
+    },
+    "spearman": {
+      "ci_high": 0.8433673222258079,
+      "ci_low": 0.8109276229530572,
+      "point": 0.8271242250560089,
+      "valid_replicates": 1000
+    }
+  },
+  "se_from_correctness_features": {
+    "mae": {
+      "ci_high": 0.3084274623303169,
+      "ci_low": 0.2876287250939332,
+      "point": 0.29768909124145093,
+      "valid_replicates": 1000
+    },
+    "r2": {
+      "ci_high": 0.7444103759923081,
+      "ci_low": 0.6969089901076904,
+      "point": 0.7210210290932619,
+      "valid_replicates": 1000
+    },
+    "spearman": {
+      "ci_high": 0.8433673222258079,
+      "ci_low": 0.8109276229530572,
+      "point": 0.8271242250560089,
+      "valid_replicates": 1000
+    }
+  }
+}

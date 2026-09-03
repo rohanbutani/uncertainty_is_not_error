@@ -1,0 +1,49 @@
+{
+  "config": {
+    "path": "configs/paper/three_run_working_paper.yaml",
+    "sha256": "a5eb11604f4192320d08f1101e954039a376940a109475217eaa081178b59bf3",
+    "size_bytes": 3436
+  },
+  "created_utc": "2026-09-03T03:21:20.876948+00:00",
+  "experiment_id": "popqa-brief-token-entropy-v1",
+  "git_sha": "232bb1d9ac06980ed2557fb6dd67f888ad868c2f",
+  "inputs": [
+    {
+      "path": "data/analysis/paper/popqa_brief/l20_tbg/token_entropy.npy",
+      "sha256": "1562454124f79b957c7d92254d2eea0bfdff113e4ea5101adcc1471e7d2dbdf7",
+      "size_bytes": 52316
+    },
+    {
+      "path": "data/analysis/paper/popqa_brief/l20_tbg/rows.parquet",
+      "sha256": "b01b2648aad40c86eafb67ab9ab1b6b1570e2f6feb6097cd5067d0cbb5f6ae91",
+      "size_bytes": 316710
+    },
+    {
+      "path": "data/azure/runs/google--gemma-2-9b--fp1-popqa-20260814/run_metadata.json",
+      "sha256": "e4bd04a8e6d42d0fda460f9f12b40109df5822f12079d2dc2917049c3d91e630",
+      "size_bytes": 31680
+    },
+    {
+      "path": "data/azure/tables/v1/google--gemma-2-9b/popqa/prompts.parquet",
+      "sha256": "0d833980d95e36cd832239332381f2e3b778db268eec4537ab6b784080f13866",
+      "size_bytes": 103066879
+    },
+    {
+      "path": "data/azure/tables/v1/google--gemma-2-9b/popqa/labels.parquet",
+      "sha256": "d2406db8cb1195931fa0bc659683332d2a614f7aa530cbc16e50e0bdce61d6ce",
+      "size_bytes": 8023862
+    }
+  ],
+  "schema_version": 1,
+  "split_protocol": {
+    "candidate_selection": "nested grouped cross-validation within canonical train",
+    "feature_selection": "discovery only",
+    "fold_salt": "token_semantic_uncertainty_v1:popqa_brief",
+    "group_column": "source_id",
+    "n_folds": 5,
+    "test_scoring": "final model fit on canonical train only"
+  },
+  "status": "prepared",
+  "study": "A",
+  "test_read_count": 0
+}

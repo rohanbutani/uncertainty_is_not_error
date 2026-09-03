@@ -1,0 +1,15 @@
+{
+  "correctness_strategy": "maximize_train_oof_balanced_accuracy",
+  "correctness_target": "f1_50",
+  "correctness_threshold": 0.7814963365484744,
+  "fit_split": "train",
+  "n_fit": 3681,
+  "prediction_role": "oof_train",
+  "predictions_path": "results/paper/probes/triviaqa-brief-sae-l20-tbg-v1/predictions.parquet",
+  "predictions_sha256": "ad501a9f2e73c898e3cca8cc19d0015dec3a5e2d12b0c20932feaf71da768b7a",
+  "run_alias": "triviaqa_brief",
+  "schema_version": 1,
+  "se_high_quantile": 0.5,
+  "se_strategy": "train_oof_score_quantile",
+  "se_threshold": 0.7230600118637085
+}

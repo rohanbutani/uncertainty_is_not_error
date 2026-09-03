@@ -1,0 +1,20 @@
+{
+  "correctness_target": "f1_50",
+  "feature_overlap": {
+    "correctness_features": 17,
+    "expected_overlap_null": 0.3082287308228731,
+    "fold_enrichment": 22.710407239819002,
+    "hypergeom_p_greater": 7.818242280936126e-09,
+    "jaccard": 0.09333333333333334,
+    "overlap": 7,
+    "overlap_coefficient": 0.4117647058823529,
+    "se_features": 65,
+    "union": 75
+  },
+  "important_limit": "hypergeometric overlap is descriptive because learned SAE features and selection statistics are not independent draws from the dictionary",
+  "layer": 20,
+  "position": "tbg",
+  "representation": "token_entropy_plus_dense_l20_tbg",
+  "run_alias": "triviaqa_long",
+  "seed": 42
+}

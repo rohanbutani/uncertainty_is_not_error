@@ -1,0 +1,3 @@
+probe,representation,se_r2,correctness_auroc,n_test
+plus_dense,token_entropy_plus_dense_l20_tbg,0.7396971889246926,0.8851628925679466,2221
+plus_sae,token_entropy_plus_sae_l20_tbg,0.7381186704315812,0.886191663233552,2221

@@ -1,0 +1,7 @@
+run_alias,position,layer,representation,target,n_seeds,mean_pairwise_jaccard,intersection_all_size,union_size
+triviaqa_brief,tbg,20,sae_code_l20_tbg_16k,se,5,1.0,128,128
+triviaqa_brief,tbg,20,sae_code_l20_tbg_16k,correctness,5,1.0,32,32
+popqa_brief,tbg,20,sae_code_l20_tbg_16k,se,5,0.7565217391304347,72,184
+popqa_brief,tbg,20,sae_code_l20_tbg_16k,correctness,5,1.0,128,128
+triviaqa_long,tbg,20,sae_code_l20_tbg_16k,se,5,1.0,128,128
+triviaqa_long,tbg,20,sae_code_l20_tbg_16k,correctness,5,1.0,64,64

@@ -1,0 +1,20 @@
+{
+  "bootstrap_replicates": 1000,
+  "bootstrap_unit": "source_id",
+  "probes": {
+    "dense": {
+      "path": "results/paper/probes/popqa-brief-dense-coordinate-l20-tbg-v1",
+      "representation": "dense_coordinate_l20_tbg"
+    },
+    "sae": {
+      "path": "results/paper/probes/popqa-brief-sae-l20-tbg-v1",
+      "representation": "sae_code_l20_tbg_16k"
+    },
+    "token_entropy": {
+      "path": "results/paper/probes/popqa-brief-token-entropy-v1",
+      "representation": "token_entropy_scalar"
+    }
+  },
+  "reference": "dense",
+  "run_alias": "popqa_brief"
+}

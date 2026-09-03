@@ -1,0 +1,97 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ssep"
+version = "0.1.0"
+description = "Sparse-autoencoder semantic-entropy and correctness probes for LLMs"
+requires-python = ">=3.12"
+# Ranges here are deliberately loose; the reproducibility pin is uv.lock (checklist §D),
+# frozen at environment-lock on the pod image and recorded in run metadata.
+dependencies = [
+  "torch>=2.4",
+  "transformers>=4.46",
+  "datasets>=2.20",
+  "evaluate==0.4.0",        # squad_v2 metric (F8 string channel) — PINNED to the
+  # ancestor environment's version (SEP env: evaluate 0.4.0): it governs squad
+  # F1/EM normalization, our SEP-matched correctness channel for short-form QA.
+  "accelerate>=0.30",
+  "numpy>=1.26",
+  "pandas>=2.2",
+  "pyarrow>=16",
+  "zarr>=3.1",              # v3 sharding required (schema §10)
+  "ml_dtypes>=0.4",         # bf16 view for the uint16-bitcast activation encoding
+  "pydantic>=2.7",          # fail-fast config (invariant #7)
+  "pyyaml>=6.0",
+  "openai>=1.50",           # Batch API judge channels
+  "huggingface_hub>=0.24",
+  "sae-lens>=5.0",          # Gemma Scope / Llama Scope; Qwen-Scope uses our custom loader
+  "tenacity>=8.3",
+  "tqdm",
+  # Later-stage (probes/analysis) deps, kept from the original scaffold:
+  "scikit-learn",
+  "scipy",
+  "matplotlib",
+  "shap>=0.52",
+]
+
+[project.optional-dependencies]
+# vLLM is pod-only (Linux/CUDA); the marker keeps cross-platform uv resolution happy on macOS dev.
+pod = ["vllm>=0.6; sys_platform == 'linux'"]
+azure = ["obstore>=0.3"]    # optional Azure-backed Zarr read path; azcopy is a system binary
+dev = ["pytest>=8", "pytest-mock>=3.14", "ruff>=0.6"]
+
+[project.scripts]
+ssep-pwq-snapshot = "ssep.make_pwq_snapshot:main"
+ssep-pwq-pilot = "ssep.pwq_pilot:main"
+ssep-generate = "ssep.generate_and_capture:main"
+ssep-labels = "ssep.compute_labels:main"
+ssep-pull = "ssep.pull:main"
+ssep-steer-generate = "ssep.steer_generate:main"
+ssep-steer-labels = "ssep.steer_labels:main"
+ssep-paper-audit = "ssep.analysis.paper.audit:main"
+ssep-paper-offline = "ssep.analysis.paper.offline:main"
+ssep-paper-probe = "ssep.analysis.paper.probe:main"
+ssep-paper-thresholds = "ssep.analysis.paper.thresholds:main"
+ssep-paper-study-a = "ssep.analysis.paper.study_a:main"
+ssep-paper-materialize = "ssep.analysis.paper.materialize:main"
+ssep-paper-transform = "ssep.analysis.paper.transforms:main"
+ssep-paper-scalar = "ssep.analysis.paper.scalar_features:main"
+ssep-paper-compare = "ssep.analysis.paper.compare:main"
+ssep-paper-workshop = "ssep.analysis.paper.workshop_artifacts:main"
+ssep-paper-appendix = "ssep.analysis.paper.appendix_figures:main"
+
+[tool.setuptools.packages.find]
+include = ["ssep*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+# Default run = hermetic CPU tier. A CLI -m overrides this addopts -m (last one wins),
+# so `pytest -m download` etc. work as documented in README.md.
+addopts = "-q -m 'not download and not nli and not gpu and not e2e and not judge_live and not azure and not snapshot'"
+markers = [
+  "download: needs network-cached HF artifacts (tokenizers, pythia-70m, one Gemma Scope layer, evaluate metrics)",
+  "nli: runs the real DeBERTa NLI model (slow on CPU; pod-required at full size)",
+  "gpu: needs CUDA + roster 9B models / SAE suites (pod acceptance, checklist §G)",
+  "e2e: dry-run end-to-end Script 1 -> Script 2 (pod acceptance, §G.1-§G.4)",
+  "judge_live: hits the real OpenAI Batch API (tiny batch; §G.1 judge leg)",
+  "azure: writes/reads the real Azure container via azcopy (§G.1 read-back leg)",
+  "snapshot: validates a frozen PWQ snapshot (§G.5)",
+]
+
+[tool.ruff]
+line-length = 100
+target-version = "py312"
+# Vendored ancestor code must stay byte-identical (tests/test_ancestor_integrity.py enforces
+# the SEP files; the HalluLens qa_utils is verbatim @80307ac); formatters and linters must
+# never touch either.
+extend-exclude = [
+  "tests/ancestors",
+  "external",
+  "ssep/data/_hallulens_qa_utils.py",
+]
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I", "UP", "B"]
+ignore = ["E501"]

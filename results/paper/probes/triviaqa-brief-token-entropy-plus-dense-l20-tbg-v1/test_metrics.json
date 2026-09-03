@@ -1,0 +1,31 @@
+{
+  "correctness_auroc": 0.8851628925679466,
+  "correctness_from_se_features_auroc": 0.8747448439271108,
+  "metrics": {
+    "correctness_direct": {
+      "auprc": 0.9570295115280092,
+      "auroc": 0.8851628925679466,
+      "brier": 0.1061401316099404,
+      "log_loss": 0.341980511006471
+    },
+    "correctness_from_se_features": {
+      "auprc": 0.95464904025036,
+      "auroc": 0.8747448439271108,
+      "brier": 0.11035132305354951,
+      "log_loss": 0.3588373452497209
+    },
+    "se_direct": {
+      "mae": 0.28694591610510034,
+      "r2": 0.7396971889246926,
+      "spearman": 0.84011034737394
+    },
+    "se_from_correctness_features": {
+      "mae": 0.2905957965311946,
+      "r2": 0.7331759913926887,
+      "spearman": 0.8376338447190227
+    }
+  },
+  "n_test": 2221,
+  "se_from_correctness_features_r2": 0.7331759913926887,
+  "se_r2": 0.7396971889246926
+}

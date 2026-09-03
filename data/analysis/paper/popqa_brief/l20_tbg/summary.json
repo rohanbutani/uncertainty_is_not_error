@@ -1,0 +1,32 @@
+{
+  "activation_source": "azure",
+  "dataset": "popqa",
+  "dense_model_input_path": "data/analysis/paper/popqa_brief/l20_tbg/dense_rms.npy",
+  "dense_raw_path": "data/analysis/paper/popqa_brief/l20_tbg/dense_raw.npy",
+  "layer": 20,
+  "normalization": "rms",
+  "position": "tbg",
+  "resid_post_index": 21,
+  "rms_reference_train": 3.2536938315080426,
+  "rows": 13047,
+  "run_alias": "popqa_brief",
+  "run_id": "google--gemma-2-9b--fp1-popqa-20260814",
+  "sae": {
+    "cos_sim_mean": 0.9129081964492798,
+    "d_in": 3584,
+    "d_sae": 16384,
+    "n_vectors": 256,
+    "realized_l0_mean": 48.7109375,
+    "realized_l0_median": 48.0,
+    "recon_rel_err": 0.4076893627643585,
+    "release": "gemma-scope-9b-pt-res-canonical",
+    "sae_id": "layer_20/width_16k/canonical",
+    "suite": "sae_lens"
+  },
+  "split_counts": {
+    "discovery": 2613,
+    "test": 3920,
+    "train": 6514
+  },
+  "table_source": "local"
+}

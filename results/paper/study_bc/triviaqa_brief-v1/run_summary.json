@@ -1,0 +1,9 @@
+{
+  "bootstrap_replicates": 1000,
+  "bootstrap_unit": "source_id",
+  "correctness_target": "f1_50",
+  "important_limit": "banked-sample policy simulation; not a live adaptive intervention and not causal evidence about SAE features",
+  "run_alias": "triviaqa_brief",
+  "sample_correctness_channel": "sample_f1>=50",
+  "test_rows": 2221
+}

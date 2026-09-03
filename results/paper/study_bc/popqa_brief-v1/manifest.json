@@ -1,0 +1,52 @@
+{
+  "config": {
+    "path": "configs/paper/three_run_working_paper.yaml",
+    "sha256": "a5eb11604f4192320d08f1101e954039a376940a109475217eaa081178b59bf3",
+    "size_bytes": 3436
+  },
+  "created_utc": "2026-09-03T03:05:21.878525+00:00",
+  "experiment_id": "popqa_brief-v1",
+  "git_sha": "232bb1d9ac06980ed2557fb6dd67f888ad868c2f",
+  "inputs": [
+    {
+      "path": "results/paper/probes/popqa-brief-sae-l20-tbg-v1/predictions.parquet",
+      "sha256": "4f6cf8b5c4304a50f9ccfb7b1fee6610ce1479f5aa3dcb42400e3f5ca2cf938e",
+      "size_bytes": 490073
+    },
+    {
+      "path": "results/paper/probes/popqa-brief-sae-l20-tbg-v1/thresholds.json",
+      "sha256": "bcbaa595a5e067fc7f3f05a75c6bf20390768dbd9b466c6986b0be3acfeeccb9",
+      "size_bytes": 573
+    },
+    {
+      "path": "data/azure/runs/google--gemma-2-9b--fp1-popqa-20260814/run_metadata.json",
+      "sha256": "e4bd04a8e6d42d0fda460f9f12b40109df5822f12079d2dc2917049c3d91e630",
+      "size_bytes": 31680
+    },
+    {
+      "path": "data/azure/tables/v1/google--gemma-2-9b/popqa/prompts.parquet",
+      "sha256": "0d833980d95e36cd832239332381f2e3b778db268eec4537ab6b784080f13866",
+      "size_bytes": 103066879
+    },
+    {
+      "path": "data/azure/tables/v1/google--gemma-2-9b/popqa/labels.parquet",
+      "sha256": "d2406db8cb1195931fa0bc659683332d2a614f7aa530cbc16e50e0bdce61d6ce",
+      "size_bytes": 8023862
+    }
+  ],
+  "schema_version": 1,
+  "split_protocol": {
+    "canonical_evaluation_split": "test",
+    "correctness_threshold": 0.35118889262469744,
+    "crossfit_folds": 5,
+    "eligible_rows": 13047,
+    "group_column": "source_id",
+    "prediction_fold_salt": "token_semantic_uncertainty_v1:popqa_brief",
+    "se_threshold": 1.8648983240127563,
+    "test_prediction_role": "external_test"
+  },
+  "status": "test_evaluated",
+  "study": "B",
+  "test_read_count": 1,
+  "test_read_utc": "2026-09-03T03:05:27.299227+00:00"
+}

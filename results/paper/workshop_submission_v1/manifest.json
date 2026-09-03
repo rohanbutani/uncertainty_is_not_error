@@ -1,0 +1,185 @@
+{
+  "important_limits": [
+    "No causal SAE intervention was run.",
+    "The three runs are development data, not untouched confirmation.",
+    "Long-form correctness was deterministically derived from banked text and gold answers.",
+    "Dense comparison is a matched 128-coordinate budget, not an unrestricted full-state probe.",
+    "Fix@2 is an oracle diagnostic; policy accuracy uses mean banked-sample correctness."
+  ],
+  "inputs": [
+    {
+      "path": "results/paper/probes/triviaqa-brief-token-entropy-v1/test_metrics.json",
+      "sha256": "6331654854d787d77b52c7eccf8b2176de2037f38faa46586803cd354b21f2c9"
+    },
+    {
+      "path": "results/paper/probes/triviaqa-brief-dense-coordinate-l20-tbg-v1/test_metrics.json",
+      "sha256": "c7bfd8c9a6692deff122537fb9a74c3e16cf9ecf70032f81441df49471af0a5c"
+    },
+    {
+      "path": "results/paper/probes/triviaqa-brief-sae-l20-tbg-v1/test_metrics.json",
+      "sha256": "0598c837564e06898d33817f57c59739d5dd505b6870c016aff76e9ccbae1c30"
+    },
+    {
+      "path": "results/paper/probes/triviaqa-brief-token-entropy-plus-dense-l20-tbg-v1/test_metrics.json",
+      "sha256": "d11a5420e1191a1020f2bb9a48e1e495c0c2692dc83a40fcc14ead642602c6d3"
+    },
+    {
+      "path": "results/paper/probes/triviaqa-brief-token-entropy-plus-sae-l20-tbg-v1/test_metrics.json",
+      "sha256": "e970cad1351575df21c0c807737d1b6a92eb8593642326081e557440f5d94416"
+    },
+    {
+      "path": "results/paper/representation_comparison/triviaqa_brief-l20-tbg-v1/paired_deltas.csv",
+      "sha256": "6ba75475e5150734c1a57bb6d335bd67c92c1dc28f5eacb610b21b56a8839803"
+    },
+    {
+      "path": "results/paper/conditional_increment/triviaqa_brief-l20-tbg-v1/paired_deltas.csv",
+      "sha256": "eb32aa193e7e5a7de154d70317628fd0f5be109fd921caaddcc459b9173b461b"
+    },
+    {
+      "path": "results/paper/conditional_representation_comparison/triviaqa_brief-l20-tbg-v1/paired_deltas.csv",
+      "sha256": "89798c46d0f33d88834adc28a4ade66f7ca8736ca5882737c851626a6b3afb56"
+    },
+    {
+      "path": "results/paper/probes/triviaqa-brief-sae-l20-tbg-v1/study_a.json",
+      "sha256": "c7cdaab3ac35dffa0c22bf226695d1262acdf154473197ef9d5c8bbc4e53120f"
+    },
+    {
+      "path": "results/paper/probes/triviaqa-brief-sae-l20-tbg-v1/test_metrics.json",
+      "sha256": "0598c837564e06898d33817f57c59739d5dd505b6870c016aff76e9ccbae1c30"
+    },
+    {
+      "path": "results/paper/probes/triviaqa-brief-sae-l20-tbg-v1/test_bootstrap.json",
+      "sha256": "cffef9617f9cc7cd715c8ec3ca4cbbd1d5773e7def9d30a9df239257d75bdb15"
+    },
+    {
+      "path": "results/paper/probes/triviaqa-brief-sae-l20-tbg-v1/selected_features.json",
+      "sha256": "fa75a345c3629cf5f0afbd3b304a3ada54d84b17f285c59d67867db178989146"
+    },
+    {
+      "path": "results/paper/study_bc/triviaqa_brief-v1/fix_rate.csv",
+      "sha256": "181a61fc77ed1357f97afddc025d8aefa93381dd6f5f00248049bd0223e882c0"
+    },
+    {
+      "path": "results/paper/study_bc/triviaqa_brief-v1/routing_policies.csv",
+      "sha256": "de720ca2a3c5593eaeae0f2492cd8589334057ebf63be6891829d01b43cb75c0"
+    },
+    {
+      "path": "results/paper/probes/popqa-brief-token-entropy-v1/test_metrics.json",
+      "sha256": "9a9b8e67b4331fe58c77e539b618cf0ad1b700cc803510a05f9b059cbed99704"
+    },
+    {
+      "path": "results/paper/probes/popqa-brief-dense-coordinate-l20-tbg-v1/test_metrics.json",
+      "sha256": "50f380f66cada2ace3c22167d1054fd3cc7dc49d1768a146223eb6ecd9df13fc"
+    },
+    {
+      "path": "results/paper/probes/popqa-brief-sae-l20-tbg-v1/test_metrics.json",
+      "sha256": "33a4b095dfd151f21b180ecf86ec7dddb1fe3298e526ac1ca14b424e6134697e"
+    },
+    {
+      "path": "results/paper/probes/popqa-brief-token-entropy-plus-dense-l20-tbg-v1/test_metrics.json",
+      "sha256": "46d412d441e67a9325b813469d595d0dd3e919710c36420ddcf4715904232f7a"
+    },
+    {
+      "path": "results/paper/probes/popqa-brief-token-entropy-plus-sae-l20-tbg-v1/test_metrics.json",
+      "sha256": "8a30e0263d27d6b39f1c4da0c05ecbb6d9512e082effd36064a9fae9d714ca16"
+    },
+    {
+      "path": "results/paper/representation_comparison/popqa_brief-l20-tbg-v1/paired_deltas.csv",
+      "sha256": "22de1054be5a9cbac5df5adbf454cc9e5fdc12ee15d787ade693a586ea8cc26a"
+    },
+    {
+      "path": "results/paper/conditional_increment/popqa_brief-l20-tbg-v1/paired_deltas.csv",
+      "sha256": "d42c5346b1cd6aa10c4f2419b94a1d065a16f6ee9a4d33532799a69b4fce6aca"
+    },
+    {
+      "path": "results/paper/conditional_representation_comparison/popqa_brief-l20-tbg-v1/paired_deltas.csv",
+      "sha256": "a86e5696ef1b968c730bc1d3b14ca00f58582e932b24c917e8b06bf0385fe0a2"
+    },
+    {
+      "path": "results/paper/probes/popqa-brief-sae-l20-tbg-v1/study_a.json",
+      "sha256": "f5d628728776307f3c97df9b90ce35b4dbcd06e37c7667d2735318a4e82d4958"
+    },
+    {
+      "path": "results/paper/probes/popqa-brief-sae-l20-tbg-v1/test_metrics.json",
+      "sha256": "33a4b095dfd151f21b180ecf86ec7dddb1fe3298e526ac1ca14b424e6134697e"
+    },
+    {
+      "path": "results/paper/probes/popqa-brief-sae-l20-tbg-v1/test_bootstrap.json",
+      "sha256": "e88159559f942777dad49f5afa6fdec56e115bc871ef8517f93248aa6740e272"
+    },
+    {
+      "path": "results/paper/probes/popqa-brief-sae-l20-tbg-v1/selected_features.json",
+      "sha256": "6901bd4e3f5a5ae45e252b0916ecd9fd0d79b7f022b2921f433ca0185114b30f"
+    },
+    {
+      "path": "results/paper/study_bc/popqa_brief-v1/fix_rate.csv",
+      "sha256": "979cf172dd9ae781737d4598be24faeb23bfabe46841040ad00aefcd85568ab6"
+    },
+    {
+      "path": "results/paper/study_bc/popqa_brief-v1/routing_policies.csv",
+      "sha256": "880c335d4c4421fd61674d85a94db1671a404d9f61929c4e2cdf6ee8d8d3fa6f"
+    },
+    {
+      "path": "results/paper/probes/triviaqa-long-token-entropy-v1/test_metrics.json",
+      "sha256": "cdda8fd6a8a7762a3d7ac1e50b3f44ce8a10e61ad1e0b65ea3ed6c1bf49d946d"
+    },
+    {
+      "path": "results/paper/probes/triviaqa-long-dense-coordinate-l20-tbg-v1/test_metrics.json",
+      "sha256": "6427a159aee8f4cd81bd5ce8b43f9322ed07b3c5ec24336a92040dd8ef00eed7"
+    },
+    {
+      "path": "results/paper/probes/triviaqa-long-sae-l20-tbg-v1/test_metrics.json",
+      "sha256": "f1baa65501a3ceb383d383705fcb748ed1ff379e65de7a55fc3463ea955b54ba"
+    },
+    {
+      "path": "results/paper/probes/triviaqa-long-token-entropy-plus-dense-l20-tbg-v1/test_metrics.json",
+      "sha256": "bbb5022a7432069d0399af3c426e9cdffa7586db95cc4c8710e12ed00f39440c"
+    },
+    {
+      "path": "results/paper/probes/triviaqa-long-token-entropy-plus-sae-l20-tbg-v1/test_metrics.json",
+      "sha256": "05830bff36f21ccf7a27b78d213318ca6728ba323d9656998d461bf9077496e6"
+    },
+    {
+      "path": "results/paper/representation_comparison/triviaqa_long-l20-tbg-v1/paired_deltas.csv",
+      "sha256": "1de0dc84f0957882836eb7c622f55ff3e9e3c0fa9cf015fbd771199e8e1e649e"
+    },
+    {
+      "path": "results/paper/conditional_increment/triviaqa_long-l20-tbg-v1/paired_deltas.csv",
+      "sha256": "6038390bbd1a4ea33bb43385397d40a2ae65314babd230d03956abd091decc8d"
+    },
+    {
+      "path": "results/paper/conditional_representation_comparison/triviaqa_long-l20-tbg-v1/paired_deltas.csv",
+      "sha256": "ab7b4e1d3f61cb286939738b38185694341c03d9293c8f6150f0120961874113"
+    },
+    {
+      "path": "results/paper/probes/triviaqa-long-sae-l20-tbg-v1/study_a.json",
+      "sha256": "8eeba33773bff22afbb7a2c600146b357e851f1641cd8f1ae6f356ba2305f304"
+    },
+    {
+      "path": "results/paper/probes/triviaqa-long-sae-l20-tbg-v1/test_metrics.json",
+      "sha256": "f1baa65501a3ceb383d383705fcb748ed1ff379e65de7a55fc3463ea955b54ba"
+    },
+    {
+      "path": "results/paper/probes/triviaqa-long-sae-l20-tbg-v1/test_bootstrap.json",
+      "sha256": "bf5b7a1e885a801ca76dcb139ccff9104340e035ff59a8a352352a60b45763ab"
+    },
+    {
+      "path": "results/paper/probes/triviaqa-long-sae-l20-tbg-v1/selected_features.json",
+      "sha256": "20b2d730a79c835e6928b2542fd4ec59fcda2927fdb4b1bd86961781c1d48aa5"
+    },
+    {
+      "path": "results/paper/study_bc/triviaqa_long-v1/fix_rate.csv",
+      "sha256": "364bed1300f219f458e5a4ce7a9ab338fdb5d61aa2c3783c097946a055320b76"
+    },
+    {
+      "path": "results/paper/study_bc/triviaqa_long-v1/routing_policies.csv",
+      "sha256": "0ddab43e785b1b4dd2f861b96006d946da0beb5b9e824cccaa7d1ec8c0353824"
+    },
+    {
+      "path": "results/paper/study_a/three-run-l20-tbg-five-seeds-v1/feature_stability.csv",
+      "sha256": "434efefb8fe5df1aca8d94d32a97d48ac8568ae3a9b07b117bb254811b5d471a"
+    }
+  ],
+  "schema_version": 1,
+  "scope": "development evidence; layer 20 TBG; Gemma-2-9B; F1>=50 correctness"
+}

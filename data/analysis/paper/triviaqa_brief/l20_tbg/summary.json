@@ -1,0 +1,30 @@
+{
+  "dataset": "trivia_qa",
+  "dense_model_input_path": "data/analysis/paper/triviaqa_brief/l20_tbg/dense_rms.npy",
+  "dense_raw_path": "data/analysis/paper/triviaqa_brief/l20_tbg/dense_raw.npy",
+  "layer": 20,
+  "normalization": "rms",
+  "position": "tbg",
+  "resid_post_index": 21,
+  "rms_reference_train": 3.425138477359642,
+  "rows": 7382,
+  "run_alias": "triviaqa_brief",
+  "run_id": "google--gemma-2-9b--fp1-triviaqa-20260812",
+  "sae": {
+    "cos_sim_mean": 0.9067891836166382,
+    "d_in": 3584,
+    "d_sae": 16384,
+    "n_vectors": 256,
+    "realized_l0_mean": 61.6328125,
+    "realized_l0_median": 62.0,
+    "recon_rel_err": 0.42075321078300476,
+    "release": "gemma-scope-9b-pt-res-canonical",
+    "sae_id": "layer_20/width_16k/canonical",
+    "suite": "sae_lens"
+  },
+  "split_counts": {
+    "discovery": 1480,
+    "test": 2221,
+    "train": 3681
+  }
+}

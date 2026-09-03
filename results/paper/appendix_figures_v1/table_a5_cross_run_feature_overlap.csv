@@ -1,0 +1,7 @@
+target,left,right,left_features,right_features,overlap,jaccard,overlap_coefficient
+se,triviaqa_brief,popqa_brief,128,128,50,0.2427184466019417,0.390625
+se,triviaqa_brief,triviaqa_long,128,128,104,0.6842105263157895,0.8125
+se,popqa_brief,triviaqa_long,128,128,51,0.248780487804878,0.3984375
+correctness,triviaqa_brief,popqa_brief,32,128,13,0.0884353741496598,0.40625
+correctness,triviaqa_brief,triviaqa_long,32,64,30,0.4545454545454545,0.9375
+correctness,popqa_brief,triviaqa_long,128,64,21,0.1228070175438596,0.328125

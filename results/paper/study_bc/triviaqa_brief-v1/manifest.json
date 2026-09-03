@@ -1,0 +1,52 @@
+{
+  "config": {
+    "path": "configs/paper/three_run_working_paper.yaml",
+    "sha256": "a5eb11604f4192320d08f1101e954039a376940a109475217eaa081178b59bf3",
+    "size_bytes": 3436
+  },
+  "created_utc": "2026-09-03T00:49:29.894728+00:00",
+  "experiment_id": "triviaqa_brief-v1",
+  "git_sha": "232bb1d9ac06980ed2557fb6dd67f888ad868c2f",
+  "inputs": [
+    {
+      "path": "results/paper/probes/triviaqa-brief-sae-l20-tbg-v1/predictions.parquet",
+      "sha256": "ad501a9f2e73c898e3cca8cc19d0015dec3a5e2d12b0c20932feaf71da768b7a",
+      "size_bytes": 371018
+    },
+    {
+      "path": "results/paper/probes/triviaqa-brief-sae-l20-tbg-v1/thresholds.json",
+      "sha256": "bcb78747e5e00ce39bdaed3c4ec1e1b5d9d85013064bb7ee61c1e2adb98437f2",
+      "size_bytes": 578
+    },
+    {
+      "path": "data/azure/runs/google--gemma-2-9b--fp1-triviaqa-20260812/run_metadata.json",
+      "sha256": "7b71fabac95359c27ecfdca98b31048345b892968ce9a7b6209f1e25893aad82",
+      "size_bytes": 31221
+    },
+    {
+      "path": "data/azure/tables/v1/google--gemma-2-9b/trivia_qa/prompts.parquet",
+      "sha256": "77cf11816a5eb147eaeadb42dc382bebeca765d69a474b545eb6cced51ff81ea",
+      "size_bytes": 44732009
+    },
+    {
+      "path": "data/azure/tables/v1/google--gemma-2-9b/trivia_qa/labels.parquet",
+      "sha256": "3b9dd88dd5429794174fc73d0f0deecc102c69ab9395f6499278f0a7d20bdba3",
+      "size_bytes": 3112401
+    }
+  ],
+  "schema_version": 1,
+  "split_protocol": {
+    "canonical_evaluation_split": "test",
+    "correctness_threshold": 0.7814963365484744,
+    "crossfit_folds": 5,
+    "eligible_rows": 7382,
+    "group_column": "source_id",
+    "prediction_fold_salt": "token_semantic_uncertainty_v1:triviaqa_brief",
+    "se_threshold": 0.7230600118637085,
+    "test_prediction_role": "external_test"
+  },
+  "status": "test_evaluated",
+  "study": "B",
+  "test_read_count": 1,
+  "test_read_utc": "2026-09-03T00:49:32.740299+00:00"
+}

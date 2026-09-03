@@ -1,0 +1,20 @@
+{
+  "correctness_target": "f1_50",
+  "feature_overlap": {
+    "correctness_features": 128,
+    "expected_overlap_null": 1.0,
+    "fold_enrichment": 108.0,
+    "hypergeom_p_greater": 1.834535064318831e-235,
+    "jaccard": 0.7297297297297297,
+    "overlap": 108,
+    "overlap_coefficient": 0.84375,
+    "se_features": 128,
+    "union": 148
+  },
+  "important_limit": "hypergeometric overlap is descriptive because learned SAE features and selection statistics are not independent draws from the dictionary",
+  "layer": 20,
+  "position": "tbg",
+  "representation": "sae_code_l20_tbg_16k",
+  "run_alias": "popqa_brief",
+  "seed": 46
+}

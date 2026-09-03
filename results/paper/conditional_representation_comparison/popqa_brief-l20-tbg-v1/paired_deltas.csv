@@ -1,0 +1,2 @@
+reference,candidate,delta_se_r2,delta_se_r2_ci_low,delta_se_r2_ci_high,delta_se_r2_bootstrap_valid,delta_correctness_auroc,delta_correctness_auroc_ci_low,delta_correctness_auroc_ci_high,delta_correctness_auroc_bootstrap_valid
+plus_dense,plus_sae,-0.002158547794865462,-0.005784727748633742,0.0011762094437488598,1000,0.001201814039113125,-0.002966541452337054,0.005048763317560325,1000

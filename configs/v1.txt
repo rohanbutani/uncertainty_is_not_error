@@ -1,0 +1,21 @@
+# judge_binary v1 — AUDIT COPY of the ancestor prompt (schema §14C.3, invariant #6).
+# The executable source of truth is the code port in ssep/labels/judges/binary.py,
+# which reproduces OATML/semantic-entropy-probes semantic_uncertainty/uncertainty/utils/utils.py
+# ::model_based_metric (commit 02e2167dd1c00e27080d421f9b40e13e00f0452b) byte-for-byte;
+# parity test (e) enforces equality against the vendored ancestor function.
+#
+# Constructed prompt, single gold answer:
+#   We are assessing the quality of answers to the following question: {question}\n
+#   The expected answer is: {answers[0]}.\n
+#   The proposed answer is: {predicted_answer}\n
+#   Within the context of the question, does the proposed answer mean the same as the expected answer? Respond only with yes or no.\nResponse:
+#
+# Constructed prompt, multiple gold answers ({answers} rendered as the Python list repr):
+#   We are assessing the quality of answers to the following question: {question}\n
+#   The following are expected answers to this question: {answers}.\n
+#   The proposed answer is: {predicted_answer}\n
+#   Within the context of the question, does the proposed answer mean the same as any of the expected answers? Respond only with yes or no.\nResponse:
+#
+# Parse rule (ported verbatim): 'yes' in response.lower() -> 1, elif 'no' in response.lower() -> 0,
+# else ONE retry, else default 0 with judge_binary_parse_fallback=True.
+# Ancestor call temperatures: 0.01 primary, 1.0 retry (recorded; Batch transport params in §0).

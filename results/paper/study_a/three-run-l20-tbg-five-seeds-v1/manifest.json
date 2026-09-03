@@ -1,0 +1,309 @@
+{
+  "important_limit": "cross-prediction and overlap establish dissociation only if direct probes are predictive and results replicate across runs/seeds/sites; they do not by themselves establish interpretability or causality",
+  "inputs": [
+    {
+      "path": "results/paper/probes/triviaqa-brief-sae-l20-tbg-v1/study_a.json",
+      "sha256": "c7cdaab3ac35dffa0c22bf226695d1262acdf154473197ef9d5c8bbc4e53120f"
+    },
+    {
+      "path": "results/paper/probes/triviaqa-brief-sae-l20-tbg-v1/test_metrics.json",
+      "sha256": "0598c837564e06898d33817f57c59739d5dd505b6870c016aff76e9ccbae1c30"
+    },
+    {
+      "path": "results/paper/probes/triviaqa-brief-sae-l20-tbg-v1/test_bootstrap.json",
+      "sha256": "cffef9617f9cc7cd715c8ec3ca4cbbd1d5773e7def9d30a9df239257d75bdb15"
+    },
+    {
+      "path": "results/paper/probes/triviaqa-brief-sae-l20-tbg-v1/manifest.json",
+      "sha256": "20528631ccab2fecec5cd93ba4845ada3b6134cb95bee25e97e448fc04da611a"
+    },
+    {
+      "path": "results/paper/probes/triviaqa-brief-sae-l20-tbg-v1/selected_features.json",
+      "sha256": "fa75a345c3629cf5f0afbd3b304a3ada54d84b17f285c59d67867db178989146"
+    },
+    {
+      "path": "results/paper/probes/triviaqa-brief-sae-l20-tbg-seed43/study_a.json",
+      "sha256": "1f2b2152cf6b97f97e6b1747d341f3fa3fedd5287d697cdb1950ee48ef2cc330"
+    },
+    {
+      "path": "results/paper/probes/triviaqa-brief-sae-l20-tbg-seed43/test_metrics.json",
+      "sha256": "0598c837564e06898d33817f57c59739d5dd505b6870c016aff76e9ccbae1c30"
+    },
+    {
+      "path": "results/paper/probes/triviaqa-brief-sae-l20-tbg-seed43/test_bootstrap.json",
+      "sha256": "cffef9617f9cc7cd715c8ec3ca4cbbd1d5773e7def9d30a9df239257d75bdb15"
+    },
+    {
+      "path": "results/paper/probes/triviaqa-brief-sae-l20-tbg-seed43/manifest.json",
+      "sha256": "e82387acec39c4f8b652e27f40eb03d9af33004053fea0fb0041e78e770d2256"
+    },
+    {
+      "path": "results/paper/probes/triviaqa-brief-sae-l20-tbg-seed43/selected_features.json",
+      "sha256": "fa75a345c3629cf5f0afbd3b304a3ada54d84b17f285c59d67867db178989146"
+    },
+    {
+      "path": "results/paper/probes/triviaqa-brief-sae-l20-tbg-seed44/study_a.json",
+      "sha256": "94b4e336280c751aad32577d4dcea7b93b47fc4c9423c9582dfe4ee6d11d2453"
+    },
+    {
+      "path": "results/paper/probes/triviaqa-brief-sae-l20-tbg-seed44/test_metrics.json",
+      "sha256": "0598c837564e06898d33817f57c59739d5dd505b6870c016aff76e9ccbae1c30"
+    },
+    {
+      "path": "results/paper/probes/triviaqa-brief-sae-l20-tbg-seed44/test_bootstrap.json",
+      "sha256": "cffef9617f9cc7cd715c8ec3ca4cbbd1d5773e7def9d30a9df239257d75bdb15"
+    },
+    {
+      "path": "results/paper/probes/triviaqa-brief-sae-l20-tbg-seed44/manifest.json",
+      "sha256": "2dc71e6918662f645f405821d406d6eb42a45d9a2577e3c8190a9f68b410dd1b"
+    },
+    {
+      "path": "results/paper/probes/triviaqa-brief-sae-l20-tbg-seed44/selected_features.json",
+      "sha256": "fa75a345c3629cf5f0afbd3b304a3ada54d84b17f285c59d67867db178989146"
+    },
+    {
+      "path": "results/paper/probes/triviaqa-brief-sae-l20-tbg-seed45/study_a.json",
+      "sha256": "4555213e33d7f4645ff88b0cb60295d638e649d3e6c47e76a2ae6271f18874f4"
+    },
+    {
+      "path": "results/paper/probes/triviaqa-brief-sae-l20-tbg-seed45/test_metrics.json",
+      "sha256": "0598c837564e06898d33817f57c59739d5dd505b6870c016aff76e9ccbae1c30"
+    },
+    {
+      "path": "results/paper/probes/triviaqa-brief-sae-l20-tbg-seed45/test_bootstrap.json",
+      "sha256": "cffef9617f9cc7cd715c8ec3ca4cbbd1d5773e7def9d30a9df239257d75bdb15"
+    },
+    {
+      "path": "results/paper/probes/triviaqa-brief-sae-l20-tbg-seed45/manifest.json",
+      "sha256": "8300ddefe2c21f0bbecd4fc8f1ab87c2d2db0735661002ff8c159ca576f45ba1"
+    },
+    {
+      "path": "results/paper/probes/triviaqa-brief-sae-l20-tbg-seed45/selected_features.json",
+      "sha256": "fa75a345c3629cf5f0afbd3b304a3ada54d84b17f285c59d67867db178989146"
+    },
+    {
+      "path": "results/paper/probes/triviaqa-brief-sae-l20-tbg-seed46/study_a.json",
+      "sha256": "5cd5d584fa58909073c8986ca090206bfcd4331192b63551e2a82bc09e80d7c2"
+    },
+    {
+      "path": "results/paper/probes/triviaqa-brief-sae-l20-tbg-seed46/test_metrics.json",
+      "sha256": "0598c837564e06898d33817f57c59739d5dd505b6870c016aff76e9ccbae1c30"
+    },
+    {
+      "path": "results/paper/probes/triviaqa-brief-sae-l20-tbg-seed46/test_bootstrap.json",
+      "sha256": "cffef9617f9cc7cd715c8ec3ca4cbbd1d5773e7def9d30a9df239257d75bdb15"
+    },
+    {
+      "path": "results/paper/probes/triviaqa-brief-sae-l20-tbg-seed46/manifest.json",
+      "sha256": "bef8eae0c081f358afc73f77d10798349b7596a3203e840b6ad554dc2ff7ce18"
+    },
+    {
+      "path": "results/paper/probes/triviaqa-brief-sae-l20-tbg-seed46/selected_features.json",
+      "sha256": "fa75a345c3629cf5f0afbd3b304a3ada54d84b17f285c59d67867db178989146"
+    },
+    {
+      "path": "results/paper/probes/popqa-brief-sae-l20-tbg-v1/study_a.json",
+      "sha256": "f5d628728776307f3c97df9b90ce35b4dbcd06e37c7667d2735318a4e82d4958"
+    },
+    {
+      "path": "results/paper/probes/popqa-brief-sae-l20-tbg-v1/test_metrics.json",
+      "sha256": "33a4b095dfd151f21b180ecf86ec7dddb1fe3298e526ac1ca14b424e6134697e"
+    },
+    {
+      "path": "results/paper/probes/popqa-brief-sae-l20-tbg-v1/test_bootstrap.json",
+      "sha256": "e88159559f942777dad49f5afa6fdec56e115bc871ef8517f93248aa6740e272"
+    },
+    {
+      "path": "results/paper/probes/popqa-brief-sae-l20-tbg-v1/manifest.json",
+      "sha256": "7f87ddc7ad61f1a88b7fbdbc1514c9178e6146ce3da71fbb24380152bf8525bf"
+    },
+    {
+      "path": "results/paper/probes/popqa-brief-sae-l20-tbg-v1/selected_features.json",
+      "sha256": "6901bd4e3f5a5ae45e252b0916ecd9fd0d79b7f022b2921f433ca0185114b30f"
+    },
+    {
+      "path": "results/paper/probes/popqa-brief-sae-l20-tbg-seed43/study_a.json",
+      "sha256": "3e80ef5ccdf84640a6284ae738580e34f871545ee472ee4fe6100d2631192fb3"
+    },
+    {
+      "path": "results/paper/probes/popqa-brief-sae-l20-tbg-seed43/test_metrics.json",
+      "sha256": "33a4b095dfd151f21b180ecf86ec7dddb1fe3298e526ac1ca14b424e6134697e"
+    },
+    {
+      "path": "results/paper/probes/popqa-brief-sae-l20-tbg-seed43/test_bootstrap.json",
+      "sha256": "e88159559f942777dad49f5afa6fdec56e115bc871ef8517f93248aa6740e272"
+    },
+    {
+      "path": "results/paper/probes/popqa-brief-sae-l20-tbg-seed43/manifest.json",
+      "sha256": "b79ba756c4792b30c0744b6b54352c6bf5b03a683f647147878d5a1de8a9aa3d"
+    },
+    {
+      "path": "results/paper/probes/popqa-brief-sae-l20-tbg-seed43/selected_features.json",
+      "sha256": "6901bd4e3f5a5ae45e252b0916ecd9fd0d79b7f022b2921f433ca0185114b30f"
+    },
+    {
+      "path": "results/paper/probes/popqa-brief-sae-l20-tbg-seed44/study_a.json",
+      "sha256": "dffbc349f025877d96b1b26579dc91ea4b11a4b53f07ea8b37e8fb4201d1aebc"
+    },
+    {
+      "path": "results/paper/probes/popqa-brief-sae-l20-tbg-seed44/test_metrics.json",
+      "sha256": "33a4b095dfd151f21b180ecf86ec7dddb1fe3298e526ac1ca14b424e6134697e"
+    },
+    {
+      "path": "results/paper/probes/popqa-brief-sae-l20-tbg-seed44/test_bootstrap.json",
+      "sha256": "e88159559f942777dad49f5afa6fdec56e115bc871ef8517f93248aa6740e272"
+    },
+    {
+      "path": "results/paper/probes/popqa-brief-sae-l20-tbg-seed44/manifest.json",
+      "sha256": "f5ff9e51ee385e019436819d4f677f95f02f8587fb66d98734f755610cdadeaf"
+    },
+    {
+      "path": "results/paper/probes/popqa-brief-sae-l20-tbg-seed44/selected_features.json",
+      "sha256": "6901bd4e3f5a5ae45e252b0916ecd9fd0d79b7f022b2921f433ca0185114b30f"
+    },
+    {
+      "path": "results/paper/probes/popqa-brief-sae-l20-tbg-seed45/study_a.json",
+      "sha256": "7a25f277646e72e458a2b7ef29afc5eba2112eb03dec089ab228c466ace79bbb"
+    },
+    {
+      "path": "results/paper/probes/popqa-brief-sae-l20-tbg-seed45/test_metrics.json",
+      "sha256": "84fe174d7ae10072285951ba200bbd39a34f8c0bc9e3815c396fb5f26fc00a71"
+    },
+    {
+      "path": "results/paper/probes/popqa-brief-sae-l20-tbg-seed45/test_bootstrap.json",
+      "sha256": "8b6a05317646123e286ce1fe6ed5d669d167b2153bcd4f4c7ddc4bba2b750e8d"
+    },
+    {
+      "path": "results/paper/probes/popqa-brief-sae-l20-tbg-seed45/manifest.json",
+      "sha256": "ee3f715a6fd67fa44f79462e9ec91da3ce061d283c41568614aa9290cc7699f5"
+    },
+    {
+      "path": "results/paper/probes/popqa-brief-sae-l20-tbg-seed45/selected_features.json",
+      "sha256": "cb5470232a8795bafa557b45841e753be10b336a6a879a43d730482cefd7a00d"
+    },
+    {
+      "path": "results/paper/probes/popqa-brief-sae-l20-tbg-seed46/study_a.json",
+      "sha256": "34fbe024ef56082c18552f3650ee4cc646bf01ef67460c4485bf6a063f337a6a"
+    },
+    {
+      "path": "results/paper/probes/popqa-brief-sae-l20-tbg-seed46/test_metrics.json",
+      "sha256": "33a4b095dfd151f21b180ecf86ec7dddb1fe3298e526ac1ca14b424e6134697e"
+    },
+    {
+      "path": "results/paper/probes/popqa-brief-sae-l20-tbg-seed46/test_bootstrap.json",
+      "sha256": "e88159559f942777dad49f5afa6fdec56e115bc871ef8517f93248aa6740e272"
+    },
+    {
+      "path": "results/paper/probes/popqa-brief-sae-l20-tbg-seed46/manifest.json",
+      "sha256": "59331d6322fe3ff4cb0cc98b3cf7de74db23af0e91db06ba92f19855c34d0b85"
+    },
+    {
+      "path": "results/paper/probes/popqa-brief-sae-l20-tbg-seed46/selected_features.json",
+      "sha256": "6901bd4e3f5a5ae45e252b0916ecd9fd0d79b7f022b2921f433ca0185114b30f"
+    },
+    {
+      "path": "results/paper/probes/triviaqa-long-sae-l20-tbg-v1/study_a.json",
+      "sha256": "8eeba33773bff22afbb7a2c600146b357e851f1641cd8f1ae6f356ba2305f304"
+    },
+    {
+      "path": "results/paper/probes/triviaqa-long-sae-l20-tbg-v1/test_metrics.json",
+      "sha256": "f1baa65501a3ceb383d383705fcb748ed1ff379e65de7a55fc3463ea955b54ba"
+    },
+    {
+      "path": "results/paper/probes/triviaqa-long-sae-l20-tbg-v1/test_bootstrap.json",
+      "sha256": "bf5b7a1e885a801ca76dcb139ccff9104340e035ff59a8a352352a60b45763ab"
+    },
+    {
+      "path": "results/paper/probes/triviaqa-long-sae-l20-tbg-v1/manifest.json",
+      "sha256": "0b635b1b0f8ef6e7dc4fcbeb9d5f8db5f8314c2dddf6bb5f9995800ce833f169"
+    },
+    {
+      "path": "results/paper/probes/triviaqa-long-sae-l20-tbg-v1/selected_features.json",
+      "sha256": "20b2d730a79c835e6928b2542fd4ec59fcda2927fdb4b1bd86961781c1d48aa5"
+    },
+    {
+      "path": "results/paper/probes/triviaqa-long-sae-l20-tbg-seed43/study_a.json",
+      "sha256": "d76b650ca5241a855542030d6abd0174b012650dce2786818bb85ecfb2fa9628"
+    },
+    {
+      "path": "results/paper/probes/triviaqa-long-sae-l20-tbg-seed43/test_metrics.json",
+      "sha256": "f1baa65501a3ceb383d383705fcb748ed1ff379e65de7a55fc3463ea955b54ba"
+    },
+    {
+      "path": "results/paper/probes/triviaqa-long-sae-l20-tbg-seed43/test_bootstrap.json",
+      "sha256": "bf5b7a1e885a801ca76dcb139ccff9104340e035ff59a8a352352a60b45763ab"
+    },
+    {
+      "path": "results/paper/probes/triviaqa-long-sae-l20-tbg-seed43/manifest.json",
+      "sha256": "89ae1a0c28b5b9a4b6b0c899c0dcf2aa01ea6405cb81818e1ef72bcd9c896c3b"
+    },
+    {
+      "path": "results/paper/probes/triviaqa-long-sae-l20-tbg-seed43/selected_features.json",
+      "sha256": "20b2d730a79c835e6928b2542fd4ec59fcda2927fdb4b1bd86961781c1d48aa5"
+    },
+    {
+      "path": "results/paper/probes/triviaqa-long-sae-l20-tbg-seed44/study_a.json",
+      "sha256": "4c91a51bd5614eb85776d6a38fc2f833ab72323af5061bbfa1bb33abfe4cab6e"
+    },
+    {
+      "path": "results/paper/probes/triviaqa-long-sae-l20-tbg-seed44/test_metrics.json",
+      "sha256": "f1baa65501a3ceb383d383705fcb748ed1ff379e65de7a55fc3463ea955b54ba"
+    },
+    {
+      "path": "results/paper/probes/triviaqa-long-sae-l20-tbg-seed44/test_bootstrap.json",
+      "sha256": "bf5b7a1e885a801ca76dcb139ccff9104340e035ff59a8a352352a60b45763ab"
+    },
+    {
+      "path": "results/paper/probes/triviaqa-long-sae-l20-tbg-seed44/manifest.json",
+      "sha256": "0a4c090a29bbb9c1252362756ca4d4ce06e0b6083b81767f8817af55378ef719"
+    },
+    {
+      "path": "results/paper/probes/triviaqa-long-sae-l20-tbg-seed44/selected_features.json",
+      "sha256": "20b2d730a79c835e6928b2542fd4ec59fcda2927fdb4b1bd86961781c1d48aa5"
+    },
+    {
+      "path": "results/paper/probes/triviaqa-long-sae-l20-tbg-seed45/study_a.json",
+      "sha256": "b240084f03372530287eec1f27971edfb2d46d888d5068c5f45b94b598fd951f"
+    },
+    {
+      "path": "results/paper/probes/triviaqa-long-sae-l20-tbg-seed45/test_metrics.json",
+      "sha256": "f1baa65501a3ceb383d383705fcb748ed1ff379e65de7a55fc3463ea955b54ba"
+    },
+    {
+      "path": "results/paper/probes/triviaqa-long-sae-l20-tbg-seed45/test_bootstrap.json",
+      "sha256": "bf5b7a1e885a801ca76dcb139ccff9104340e035ff59a8a352352a60b45763ab"
+    },
+    {
+      "path": "results/paper/probes/triviaqa-long-sae-l20-tbg-seed45/manifest.json",
+      "sha256": "ae09ab13d6bc3bc32c20d0cc53a89d83ff80071e01782d6b17adccc46e499eae"
+    },
+    {
+      "path": "results/paper/probes/triviaqa-long-sae-l20-tbg-seed45/selected_features.json",
+      "sha256": "20b2d730a79c835e6928b2542fd4ec59fcda2927fdb4b1bd86961781c1d48aa5"
+    },
+    {
+      "path": "results/paper/probes/triviaqa-long-sae-l20-tbg-seed46/study_a.json",
+      "sha256": "e2782c0e62ddf3e7cb7b9f026f54b0074411dd02d2571411cf855b493585ee48"
+    },
+    {
+      "path": "results/paper/probes/triviaqa-long-sae-l20-tbg-seed46/test_metrics.json",
+      "sha256": "f1baa65501a3ceb383d383705fcb748ed1ff379e65de7a55fc3463ea955b54ba"
+    },
+    {
+      "path": "results/paper/probes/triviaqa-long-sae-l20-tbg-seed46/test_bootstrap.json",
+      "sha256": "bf5b7a1e885a801ca76dcb139ccff9104340e035ff59a8a352352a60b45763ab"
+    },
+    {
+      "path": "results/paper/probes/triviaqa-long-sae-l20-tbg-seed46/manifest.json",
+      "sha256": "9566ab95fee14a3d8be78b7eb20f71691f55825a5799e9ea94d3898cff3bd4c0"
+    },
+    {
+      "path": "results/paper/probes/triviaqa-long-sae-l20-tbg-seed46/selected_features.json",
+      "sha256": "20b2d730a79c835e6928b2542fd4ec59fcda2927fdb4b1bd86961781c1d48aa5"
+    }
+  ],
+  "n_bundles": 15,
+  "schema_version": 1,
+  "status": "aggregate_of_frozen_probe_bundles",
+  "study": "A"
+}

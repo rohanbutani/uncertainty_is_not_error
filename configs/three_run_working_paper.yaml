@@ -1,0 +1,111 @@
+version: 1
+paper_id: token_semantic_uncertainty_v1
+model: google/gemma-2-9b
+artifact_root: data/azure
+output_root: results/paper
+
+# These are development runs. No paper claim may call them an untouched
+# confirmation set: their results have already informed the protocol.
+runs:
+  triviaqa_brief:
+    run_id: google--gemma-2-9b--fp1-triviaqa-20260812
+    run_group: fp1-triviaqa-20260812
+    dataset: trivia_qa
+    source_family: trivia_qa
+    prompt_regime: brief
+    expected_rows: 7402
+    paired_with: triviaqa_long
+  popqa_brief:
+    run_id: google--gemma-2-9b--fp1-popqa-20260814
+    run_group: fp1-popqa-20260814
+    dataset: popqa
+    source_family: popqa
+    prompt_regime: brief
+    expected_rows: 13067
+  triviaqa_long:
+    run_id: google--gemma-2-9b--fp1-triviaqa-long-20260817
+    run_group: fp1-triviaqa-long-20260817
+    dataset: trivia_qa_long
+    source_family: trivia_qa
+    prompt_regime: unrestricted
+    expected_rows: 7402
+    paired_with: triviaqa_brief
+
+evaluation:
+  group_column: source_id
+  canonical_splits: [discovery, train, test]
+  crossfit_folds: 5
+  optimization_seeds: [42, 43, 44, 45, 46]
+  bootstrap_replicates: 1000
+  bootstrap_seed: 20260902
+  primary_continuous_metrics: [spearman, r2, mae]
+  primary_binary_metrics: [auroc, auprc, brier, log_loss]
+  model_selection_metrics:
+    continuous: r2
+    binary: auroc
+  # Current runs are development evidence. This field must point at NQ/PWQ
+  # before a result can be labeled confirmatory.
+  confirmation_run: null
+
+positions:
+  primary: [tbg, content_slt]
+  sensitivity: [answer_first, stored_slt, eoa, generated_last]
+  formatting_tokens_are_primary: false
+
+sites:
+  # resid_post[:, 0] is the embedding output; decoder layer L is stored at L+1.
+  layer_indexing: decoder_zero_based_resid_post_plus_one
+  # Dense states are cheap to gather and provide the unbiased localization curve.
+  dense_localization_layers: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41]
+  # SAE sites cover depth plus the previously observed answer-side/TBG peaks.
+  sae_primary_layers: [8, 16, 20, 24, 32, 40]
+  primary_positions: [tbg, content_slt]
+  sensitivity_positions: [answer_first, stored_slt, eoa, generated_last]
+
+representations:
+  - dense
+  - dense_l1
+  - dense_topk
+  - pca
+  - random_projection
+  - sae_code
+  - sae_preactivation
+  - random_relu_matched_l0
+  - permuted_sae_features
+  - scalar_only
+  - scalar_plus_dense
+  - scalar_plus_sae
+feature_counts: [8, 16, 32, 64, 128, 256]
+probe_regularization: [0.00001, 0.0001, 0.001, 0.01, 0.1, 1.0]
+
+sae:
+  release: gemma-scope-9b-pt-res-canonical
+  width: 16k
+  l0: canonical
+  normalization: rms
+
+studies:
+  a_dissociation:
+    targets: [se_discrete, judge_binary, f1_50, token_entropy]
+    tests: [cross_prediction, conditional_increment, feature_partition, localization]
+    feature_fdr: 0.05
+  b_fix_rate:
+    primary_sample_correctness: sample_judge_binary_labels
+    fallback_sample_correctness: sample_f1
+    fallback_f1_threshold: 50.0
+    resample_budgets: [1, 2, 5, 10]
+    minimum_effect: 0.05
+  c_routing:
+    policies:
+      - never_resample
+      - always_resample
+      - correctness_trigger
+      - token_entropy_trigger
+      - joint_high_se_error
+      - joint_low_se_error_abstain
+    resample_budgets: [1, 2, 5, 10]
+
+required_result_families:
+  - longshort
+  - steering
+  - retest

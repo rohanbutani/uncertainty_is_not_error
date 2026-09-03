@@ -1,0 +1,49 @@
+{
+  "config": {
+    "path": "configs/paper/three_run_working_paper.yaml",
+    "sha256": "a5eb11604f4192320d08f1101e954039a376940a109475217eaa081178b59bf3",
+    "size_bytes": 3436
+  },
+  "created_utc": "2026-09-03T00:47:30.442723+00:00",
+  "experiment_id": "triviaqa-brief-sae-l20-tbg-v1",
+  "git_sha": "232bb1d9ac06980ed2557fb6dd67f888ad868c2f",
+  "inputs": [
+    {
+      "path": "data/analysis/paper/triviaqa_brief/l20_tbg/sae_codes.npy",
+      "sha256": "124707f1d8369d5009fce368e1164463c2d0280aec5cf0a82e839172cab599d1",
+      "size_bytes": 483786880
+    },
+    {
+      "path": "data/analysis/paper/triviaqa_brief/l20_tbg/rows.parquet",
+      "sha256": "f97d9d0fb659a436f32afa0f53d7f634c9fa27f1a4cc2595475217a46b7fdb44",
+      "size_bytes": 362643
+    },
+    {
+      "path": "data/azure/runs/google--gemma-2-9b--fp1-triviaqa-20260812/run_metadata.json",
+      "sha256": "7b71fabac95359c27ecfdca98b31048345b892968ce9a7b6209f1e25893aad82",
+      "size_bytes": 31221
+    },
+    {
+      "path": "data/azure/tables/v1/google--gemma-2-9b/trivia_qa/prompts.parquet",
+      "sha256": "77cf11816a5eb147eaeadb42dc382bebeca765d69a474b545eb6cced51ff81ea",
+      "size_bytes": 44732009
+    },
+    {
+      "path": "data/azure/tables/v1/google--gemma-2-9b/trivia_qa/labels.parquet",
+      "sha256": "3b9dd88dd5429794174fc73d0f0deecc102c69ab9395f6499278f0a7d20bdba3",
+      "size_bytes": 3112401
+    }
+  ],
+  "schema_version": 1,
+  "split_protocol": {
+    "candidate_selection": "nested grouped cross-validation within canonical train",
+    "feature_selection": "discovery only",
+    "fold_salt": "token_semantic_uncertainty_v1:triviaqa_brief",
+    "group_column": "source_id",
+    "n_folds": 5,
+    "test_scoring": "final model fit on canonical train only"
+  },
+  "status": "prepared",
+  "study": "A",
+  "test_read_count": 0
+}

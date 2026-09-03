@@ -1,0 +1,15 @@
+{
+  "correctness_strategy": "maximize_train_oof_balanced_accuracy",
+  "correctness_target": "f1_50",
+  "correctness_threshold": 0.35118889262469744,
+  "fit_split": "train",
+  "n_fit": 6514,
+  "prediction_role": "oof_train",
+  "predictions_path": "results/paper/probes/popqa-brief-sae-l20-tbg-v1/predictions.parquet",
+  "predictions_sha256": "4f6cf8b5c4304a50f9ccfb7b1fee6610ce1479f5aa3dcb42400e3f5ca2cf938e",
+  "run_alias": "popqa_brief",
+  "schema_version": 1,
+  "se_high_quantile": 0.5,
+  "se_strategy": "train_oof_score_quantile",
+  "se_threshold": 1.8648983240127563
+}
