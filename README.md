@@ -58,17 +58,5 @@ That path requires the external row-level activation stores and model/SAE checkp
 
 ## Data and reproducibility
 
-Raw activations, model checkpoints, credentials, caches, and absolute local paths are not included. Result manifests record the source runs and expected inputs. The repository is intended to make the analysis transparent and auditable while keeping large or access-controlled data external.
+Raw activations, model checkpoints, credentials, caches, and absolute local paths are not included, but are available upon request. Result manifests record the source runs and expected inputs. The repository is intended to make the analysis transparent and auditable while keeping large or access-controlled data external.
 
-## Citation
-
-If you use this code or the associated artifacts, please cite:
-
-```bibtex
-@article{patel2026dissociation,
-  title={Are LLM Uncertainty and Correctness Encoded by the Same Features? A Functional Dissociation via Sparse Autoencoders},
-  author={Patel, Het and Chen, Tiejin and Wei, Hua and Papalexakis, Evangelos E. and Chen, Jia},
-  journal={arXiv preprint arXiv:2604.19974},
-  year={2026}
-}
-```
